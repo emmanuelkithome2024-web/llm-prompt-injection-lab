@@ -1,0 +1,32 @@
+# LLM Prompt Injection Test Cases
+
+## Objective
+
+This project explores common prompt-injection patterns in LLM
+applications in an authorized testing environment.
+
+## Tests
+
+### 1. Instruction Override
+
+Attempts to make the model disregard previously established
+instructions.
+
+### 2. System Instruction Request
+
+Tests whether an application unnecessarily reveals hidden
+system instructions.
+
+### 3. Role Manipulation
+
+Attempts to change the model's assumed role and bypass
+application-level restrictions.
+
+## Security Considerations
+
+A secure LLM application should treat untrusted user input as
+untrusted data and maintain a clear separation between system
+instructions and user-controlled content.
+
+Testing should only be performed against systems for which the
+tester has authorization.
